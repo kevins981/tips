@@ -11,7 +11,7 @@
 extern "C" {
 #endif
 
-#define PMEM_PATH_DEF "/mnt/pmem0/tips" 
+#define PMEM_PATH_DEF "/pmem0p1/tips" 
 #define MEM_SIZE 243ul * 1024ul * 1024ul * 1024ul
 #define ARRAY_SIZE 50000000
 #define N_FL_THREADS 10
