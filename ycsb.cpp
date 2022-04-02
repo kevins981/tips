@@ -699,13 +699,13 @@ void ycsb_load_run_randint(int index_type, int wl, int kt, int ap, int num_threa
 
 int main(int argc, char **argv) {
     if (argc != 7) {
-        std::cout << "Usage: ./ycsb [index type] [ycsb workload type] [key distribution] [access pattern] [number of threads]\n";
-        std::cout << "1. index type: art hot bwtree masstree clht\n";
-        std::cout << "               fastfair levelhash cceh woart\n";
-        std::cout << "2. ycsb workload type: a, b, c, e\n";
-        std::cout << "3. key distribution: randint, string\n";
-        std::cout << "4. access pattern: uniform, zipfian\n";
-        std::cout << "5. number of threads (integer)\n";
+        std::cout << "Usage: ./ycsb [index type] [] [ycsb workload type] [key distribution] [access pattern] [number of threads]\n";
+        std::cout << "1. index type: art tips lock-free\n";
+        std::cout << "2. TIPS index: btree, btree-fixed, art, hlist, lfhlist, bst, lfbst, clht, lfdlht, lfbdlht, lfbdlbst, lfdlbst, nvthash, nvtbst\n";
+        std::cout << "3. ycsb workload type: a, b, c, e\n";
+        std::cout << "4. key distribution: randint, string\n";
+        std::cout << "5. access pattern: uniform, zipfian\n";
+        std::cout << "6. number of threads (integer)\n";
         return 1;
     }
 
