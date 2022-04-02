@@ -160,8 +160,10 @@ int get_cpu_id()
 
 
 /////////////////////////////////////////////////////////////////////////////////
-static uint64_t LOAD_SIZE = 32000000;
-static uint64_t RUN_SIZE = 32000000;
+//static uint64_t LOAD_SIZE = 32000000;
+//static uint64_t RUN_SIZE = 32000000;
+static uint64_t LOAD_SIZE = 1000000;
+static uint64_t RUN_SIZE = 1000000;
 
 #ifdef STR_KEY
 void ycsb_load_run_string(int index_type, int wl, int kt, int ap, int num_thread,

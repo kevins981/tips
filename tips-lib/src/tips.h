@@ -17,7 +17,8 @@ extern "C" {
 #define F_READER_THREAD 0x111
 #define F_WRITER_THREAD 0x101
 #define FREE_LIST_SIZE 25000
-#define MAX_COMB_ENTRIES 32000000
+//#define MAX_COMB_ENTRIES 32000000
+#define MAX_COMB_ENTRIES 1000000
 #define N_WORKER_MAX 31 // for art, clht, ht, lfht and lfbst
 //#define N_WORKER_MAX 2 // for btree and bst
 #define N_WORKER_MIN 1
